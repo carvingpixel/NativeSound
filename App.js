@@ -110,6 +110,8 @@ function playSound(testInfo, component) {
     });
   };
 
+
+  
   // If the audio is a 'require' then the second parameter must be the callback.
   if (testInfo.isRequire) {
     const sound = new Sound(testInfo.url, error => callback(error, sound));
